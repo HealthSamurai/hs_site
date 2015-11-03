@@ -1,9 +1,9 @@
 .container-fluid.sub-title.text-center
 	span.sub-moto Наши продукты
-	span.sub-desc Мы разрабатываем технологичные продукты на основе HL7 FHIR, которые становятся "здоровым сердцем" медицинских информационных систем нового поколения. Многие из наших продуктов Open Source.
+	span.sub-desc Мы разрабатываем технологичные продукты на основе HL7 FHIR.
 
 .container
-	.row.list-item
+	#fhirbase.row.list-item
 		.col-md-3
 			i.fa.fa-fire.logo
 			//- тут надо реализовать выпадающий список технологий, поверх логотипа
@@ -35,7 +35,7 @@
 				i.fa.fa-comments-o.add_links
 
 	hr
-	.row.list-item
+	#aidbox.row.list-item
 		.col-md-3
 			i.fa.fa-gift.logo
 			br
@@ -62,9 +62,9 @@
 				li Aidbox предоставляет хостинг для базы и несложных single page applications
 				li Aidbox имеет SDK и вы можете интегрироваться с решениями на ваших технологиях (Java, .Net etc...)
 			br
-			a.btn.btn-default.gotosite(href="https://aidbox.io/landing.html#/") Сайт продукта
+			a.btn.btn-default.gotosite(href="https://aidbox.io/landing.html#/" target="_blank") Сайт продукта
 	hr
-	.row.list-item
+	#hl7mapper.row.list-item
 		.col-md-3
 			i.fa.fa-arrow-circle-o-right.logo
 			br
@@ -77,19 +77,15 @@
 			span.product-slogan Модуль для интеграции...
 			br
 			br
-			p FormStamp - это платформа "как сервис" (PaaS) для разработки медицинских решений на основе HL7 FHIR. Aidbox подходит для построения мобильных и web-решений оперирующих медицинскими данными: электронные карты (EHR), интеграционные ”шины”, репозитории медицинских данных (реестры), госпитальные системы (HIS), порталы для пациентов и телемедицины.
+			p HL7 Mapper - это ...
 			br
 			strong Особенности HL7 Mapper
 			ul
-				li Aidbox использует Fhirbase для хранения данных
-				li Aidbox реализует REST API на основе стандарта HL7 FHIR
-				li Aidbox решает вопросы Security с использование OAuth
-				li Aidbox предоставляет хостинг для базы и несложных single page applications
-				li Aidbox имеет SDK и вы можете интегрироваться с решениями на ваших технологиях (Java, .Net etc...)
+				li HL7 Mapper ...
 			br
-			a.btn.btn-default.gotosite(href="http://fhirbase.github.io") Сайт продукта
+			a.btn.btn-default.gotosite(href="http://fhirbase.github.io" target="_blank") Сайт продукта
 	hr
-	.row.list-item
+	#formstamp.row.list-item
 		.col-md-3
 			i.fa.fa-stack-overflow.logo
 			br
@@ -111,9 +107,9 @@
 				li Aidbox предоставляет хостинг для базы и несложных single page applications
 				li Aidbox имеет SDK и вы можете интегрироваться с решениями на ваших технологиях (Java, .Net etc...)
 			br
-			a.btn.btn-default.gotosite(href="http://formstamp.github.io/#/") Сайт продукта
+			a.btn.btn-default.gotosite(href="http://formstamp.github.io/#/" target="_blank") Сайт продукта
 	hr
-	.row.list-item
+	#foodtaster.row.list-item
 		.col-md-3
 			i.fa.fa-rocket.logo
 			br

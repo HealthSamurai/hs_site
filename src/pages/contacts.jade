@@ -12,30 +12,32 @@
 		br
 		a.btn.btn-default.btn-lg Сотрудничать
 
-	.container.cont-products
-		.item-product
-			.image-product
-				//- i.fa.fa-fire.logo
-			.productname
-				h3 Санкт-Петербург &nbsp
-					small Россия
-				p Реляционное хранилище для медицинских данных на основе HL7 FHIR
-				a(href="#/") Подробнее...
-		.item-product
-			.image-product
-				//- i.fa.fa-gift.logo
-			.productname
-				h3 Лос-Анджелес &nbsp
-					small США
-				p USA 832 Hermosa Ave Hermosa Beach, CA 90254
-		.item-product
-			.image-product
-				//- i.fa.fa-arrow-circle-o-right.logo
-			.productname
-				h3 Киев &nbsp
-					small Укарина
-				p Интеграционный модуль для преобразования сообщений HL7 v2.x в HL7 FHIR и обратно
-				a(href="#/") Подробнее...
+	.container.products
+		.col-md-4
+			a.item-product
+				span.image-product
+					iframe.img-responsive(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255984.99733243225!2d30.044883592145347!3d59.91749254175824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2sSt+Petersburg!5e0!3m2!1sen!2sru!4v1446553321535" width="800" height="600" frameborder="0" style="border:0" allowfullscreen)
+					//- i.fa.fa-fire.logo
+				span.productname
+					h3 Санкт-Петербург &nbsp
+						small Россия
+					p Россия, Санкт-Петербург, ул. Большая морская 19
+		.col-md-4
+			a.item-product
+				span.image-product
+					//- i.fa.fa-gift.logo
+				span.productname
+					h3 Лос-Анджелес &nbsp
+						small США, Калифорния
+					p USA 832 Hermosa Ave Hermosa Beach, CA 90254
+		.col-md-4
+			a.item-product
+				span.image-product
+					//- i.fa.fa-arrow-circle-o-right.logo
+				span.productname
+					h3 Киев &nbsp
+						small Укарина
+					p Украина, Киев, ул. Тестовая 14
 	br
 	br
 	br

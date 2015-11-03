@@ -1,79 +1,250 @@
 .container-fluid.sub-title.text-center
 	span.sub-moto Наши проекты
-	span.sub-desc Мы разрабатываем медицинские web-решения нового поколения для наших клиентов, на основе наших технологичных продуктов.
+	span.sub-desc Вместе с нашими клиентам мы создаем медицинские системы нового поколения, которые используются в разных частях мира.
 
 .container
-	.row.list-item
-		.col-md-8
+	#kainos.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015 - ...
 			h2 Kainos &nbsp
 				small Support for Fhirbase
-			p Самураи осуществляют поддержку/доработку Fhirbase по запросам от Kainos. Kainos создает медицинскую платформу для Великобретании.
+			p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
 			br
+			.project-details(ng-class="{opened:kainos}")
+				strong О проекте Kainos
+				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				br
+				strong Продукты и технологии
+				br
+				span.label.label-info PostgreSQL 9.4+ 
+				&nbsp
+				span.label.label-info plv8 
+				&nbsp
+				span.label.label-info HL7 FHIR 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="kainos=!kainos") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#netrika.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015
 			h2 Нетрика.ДЛИ &nbsp
 				small Consulting & Audit
-			p Самураи проконсультировали Нетрику по межународным стандартам (HL7 v2, HL7 v3, HL7 FHIR) и помогли выбрать наиболее подходящий для их задач. Прочитали тренинг по основам HL7 FHIR. Поучаствовали в проектировании сервиса для обмена лабораторными данными и создании модели данных на основе HL7 FHIR.
+			p Самураи проконсультировали Нетрику по межународным стандартам (HL7 v2, HL7 v3, HL7 FHIR) и помогли выбрать стандарт подходящий для их задач. Прочитали тренинг по основам HL7 FHIR. Поучаствовали в проектировании сервиса для обмена лабораторными данными и создании модели данных на основе HL7 FHIR.
 			br
+			.project-details(ng-class="{opened:netrika}")
+				strong О проекте Нетрика.ДЛИ
+				p Нетрика разаботала сервис для обмена данными лабораторных исследований и для реализации использовала Fhirbase. Сервис для обмена лабораторными данными, позволяет медицинским учреждениям и лабораториям обмениваться назначениями и результатами лабораторных исследований в электронном виде, весь обмен данными производится на основне стандарта HL7 FHIR.
+				br	 
+				strong Продукты и технологии
+				br
+				span.label.label-info Fhirbase 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="netrika=!netrika") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#vitalsync.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015 - ...
 			h2 VitalSync &nbsp
 				small Consulting & Custom development
-			p Самураи консультируют по применению стандарта HL7 FHIR и занимаются разработкой интеграционного модуля для обработки входящего потока данных.
+			p Самураи консультируют по применению стандарта HL7 FHIR и занимаются разработкой интеграционного модуля для обработки входящего потока данных в формате HL7 v2.x.
 			br
+			.project-details(ng-class="{opened:vitalsync}")
+				strong О проекте Kainos
+				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				br
+				strong Продукты и технологии
+				br
+				span.label.label-info PostgreSQL 9.4+ 
+				&nbsp
+				span.label.label-info plv8 
+				&nbsp
+				span.label.label-info HL7 FHIR 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="vitalsync=!vitalsync") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#miazslt.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015
 			h2 МИАЦ.СЛТ &nbsp
-				small Bootstrap & Custom development
+				small Project Bootstrap & Custom development
 			p Самураи спроектировали, разработали и запустили в использование web-сервис “МИАЦ.СЛТ” для управления справочником лабораторных тестов (like LOINC). Сервис спроектирован на основе стандарта HL7 FHIR и построен на базе технологичных продуктов Aidbox и Fhirbase.
 			br
+			.project-details(ng-class="{opened:miazslt}")
+				strong О проекте Kainos
+				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				br
+				strong Продукты и технологии
+				br
+				span.label.label-info PostgreSQL 9.4+ 
+				&nbsp
+				span.label.label-info plv8 
+				&nbsp
+				span.label.label-info HL7 FHIR 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="miazslt=!miazslt") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#miazmo.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015
 			h2 МИАЦ.МО &nbsp
-				small Bootstrap & Custom development
+				small Project Bootstrap & Custom development
 			p Самураи спроектировали, разработали и запустили в использование web-сервис “МИАЦ.МО” для управления реестром медицинских организаций Санкт-Петербурга. Сервис спроектирован на основе стандарта HL7 FHIR и построен на базе технологичных продуктов Aidbox и Fhirbase.
 			br
+			.project-details(ng-class="{opened:miazmo}")
+				strong О проекте МИАЦ.МО
+				p Web-сервис МИАЦ.МО используется для актуализации реестра медицинских организаций, через заявки на изменения от представителей медицинских учреждений и их последующим утверждением представителями СПб МИАЦ.
+				p Актуальный реестр распространяется через FHIR API и используется для идентификации медицинских учреждений Санкт-Петербурга при электронном обмене медицинскими данными между информационными системами организаций..
+				br
+				strong Продукты и технологии
+				br
+				span.label.label-info Fhirbase 
+				&nbsp
+				span.label.label-info Aidbox 
+				&nbsp
+				span.label.label-info AngularJS 
+				&nbsp
+				span.label.label-info Clojure (JVM) 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="miazmo=!miazmo") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#holiadvice.row.list-item
+		.col-md-8.project-descrption
 			span.date 2015
 			h2 Holiadvice &nbsp
 				small Custom development
 			p Самураи спроектировали и разработали телемедицинский портал для "нетрадиционной" медицины. На данный момент используется в Израиле и планируется выход на международный рынок.
 			br
+			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#salemed.row.list-item
+		.col-md-8.project-descrption
 			span.date 2014 - 2015
 			h2 SaleMed &nbsp
 				small Custom development
 			p Самураи придумали, разработали и провели пилотный запуск электронной торговой площадки для МРТ-центров и страховых компаний в Санкт-Петербурге.
 			br
+			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 	hr
-	.row.list-item
-		.col-md-8
+	#medclient.row.list-item
+		.col-md-8.project-descrption
 			span.date 2007 - 2014
 			h2 MedClient EHR &nbsp
 				small Custom development
 			p Самураи разработали, сертифицировали по программе ONC (Stage 1) и внедрили, в трех клиниках США, медицинскую информационную систему для госпиталей (EHR).
 			br
+			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
 		.col-md-3
+			.images
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
+				.row
+					a.image-1(href="#/")
+						img.img-responsive(src="")
+					a.image-2(href="#/")
+						img.img-responsive(src="")
 
 .calltoaction.text-center
 	h4 Готовы к сотрудничеству?

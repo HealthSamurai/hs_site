@@ -2,7 +2,12 @@ body{
 	font-size: 16px;
 	color: #333356;
 	letter-spacing: 0.04em;
-	font-weight: 200;
+	font-weight: 300;
+}
+
+.col-md-4{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #footer{
@@ -44,7 +49,7 @@ body{
 		margin-right: 20px;
 		margin-top: 8px;
 		a{
-			color: #888;
+			color: #A23835;
 			padding: 10px 20px;
 			border: 1px solid transparent;
 			background-color: transparent;
@@ -72,18 +77,18 @@ body{
 .title{
 	padding: 240px 15px;
 	span.moto{
-		font-size: 36px;
+		font-size: 41px;
 		display: block;
-		line-height: 41px;
-		width: 80%;
+		line-height: 1.3em;
+		max-width: 800px;
 	}
 	span.desc{
-		font-size: 18px;
+		font-size: 21px;
 		display: block;
 		padding-top: 24px;
 		opacity: 0.68;
-		width: 50%;
-		line-height: 24px;
+		max-width: 800px;
+		line-height: 1.5em;
 	}
 	span.title_piece{
 		color: #A23835;
@@ -98,24 +103,20 @@ body{
 	background-color: #a23835;
 	color: white;
 	span.sub-moto{
-		font-size: 36px;
-		line-height: 41px;
+		font-size: 41px;
+		line-height: 1.3em;
 		display: block;
 	}
 	span.sub-desc{
-		font-size: 16px;
+		font-size: 18px;
 		padding-top: 24px;
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
 		// color: #888;
-		line-height: 24px;
+		line-height: 1.5em;
 		display: block;
 	}
-}
-
-.products{
-	padding-bottom: 80px;
 }
 
 .projects{
@@ -144,42 +145,49 @@ body{
 	font-weight: 600;
 }
 
-.cont-products{
-	display: flex;
-	flex-flow: row wrap;
-	.item-product{
-		flex-grow: 1;
-		width: 30%;
+.products{
+	padding-bottom: 80px;
+	a.item-product{
 		margin-right: 10px;
 		border: 1px solid transparent;
-		min-width: 240px;
-		.image-product{
+		text-decoration: none;
+		color: #333356;
+		display: block;
+		span.image-product{
 			font-size: 144px;
 			text-align: center;
+			width: 100%;
 			height: 200px;
 			background-color: #ddd;
 			color: #888;
+			display: inline-block;
 		}
-		.productname{
+		span.productname{
 			padding-left: 10px;
+			display: inline-block;
 		}
 	}
 }
 
-.item-product:hover{
+a.item-product:hover{
 	cursor: pointer;
-	.image-product{
+	span.image-product{
 		border: 1px solid #A23835;
 		background-color: #A23835;
 		color: white;
 	}
-	h3{
+	span.productname{
+		h3{
 		color: #A23835;
+		}
 	}
 }
 
 .cont-projects{
-	.item-project{
+	a.item-project{
+		display: inline-block;
+		text-decoration: none;
+		color: #333356;
 		width: 100%;
 		margin-right: 10px;
 		border: 1px solid #ddd;
@@ -201,7 +209,7 @@ body{
   }
 }
 
-.item-project:hover{
+a.item-project:hover{
 	border: 1px solid #A23835;
 	cursor: pointer;
 	h3 {
@@ -349,6 +357,40 @@ a.btn.gotosite:hover{
 	color: white;
 }
 
+/* Works Page */
+.project-descrption{
+	padding-right: 40px;
+}
+
+.images{
+	width: 100%;
+	height: 200px;
+	a.image-1{
+		float: left;
+		background-color: #ddd;
+		width: 50%;
+		height: 100px;
+		border: 1px solid white;
+	}
+	a.image-2{
+		float: right;
+		background-color: #ddd;
+		width: 50%;
+		height: 100px;
+		border: 1px solid white;
+	}
+	a:hover{
+		border: 1px solid #A23835;
+		background-color: #A23835;
+	}
+}
+
+.project-details{
+	display: none;
+	&.opened{
+		display: block;
+	}
+}
 /* Contacts Page */
 
 .contacts{
