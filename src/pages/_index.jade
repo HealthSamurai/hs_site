@@ -1,8 +1,9 @@
-.container.title
-  span.moto Мы 
-    span.title_piece знаем как 
-    | создавать медицинские информационные системы будущего
-  span.desc Эксперты в Health IT. Разрабатываем для клиентов на основе наших технологичных продуктов и стандарта HL7 FHIR.
+.container-fluid.title
+  .container.text-center
+    span.moto Мы 
+      span.title_piece знаем как 
+      | создавать медицинские информационные системы будущего
+    span.desc Эксперты в Health IT. Разрабатываем для клиентов на основе наших технологичных продуктов и стандарта HL7 FHIR.
 
 .container.products
   h3 Продукты &nbsp
@@ -15,21 +16,23 @@
         i.hs-icon.logo.icon-fhirbase
       span.productname
         h3 Fhirbase &nbsp
-          small Open Source
+          small.label Open Source
         p Реляционное хранилище для медицинских данных на основе HL7 FHIR
   .col-md-4
     a.item-product(href="#/products#aidbox")
       span.image-product
         i.hs-icon.logo.icon-aidbox
       span.productname
-        h3 Aidbox
+        h3 Aidbox &nbsp
+          small.label Platform as a Service
         p Облачная платформа для разработки медицинских приложений на основе HL7 FHIR
   .col-md-4
     a.item-product(href="#/products#hl7mapper")
       span.image-product
         i.hs-icon.logo.icon-mapper
       span.productname
-        h3 HL7 Mapper
+        h3 HL7 Mapper &nbsp
+          small.label Library
         p Интеграционный модуль для преобразования сообщений HL7 v2.x в HL7 FHIR и обратно
 .container.projects
   h3 Проекты &nbsp
@@ -38,16 +41,19 @@
   br
   .cont-projects
     a.item-project(href="#/works#medclient")
-      span 2007-2014
+      //- span 2007-2014
       h3 MedClient EHR
-      span Разработка, внедрение в 4-х американских клиниках и сертификация облачной EHR
+        small.label
+      span Разработка, сертификация и внедрение в 4-х американских клиниках облачной EHR
     a.item-project(href="#/works#kainos")
-      span 2015 год
+      //- span 2015 год
       h3 Kainos
+        small.label
       span Доработка Fhirbase под нужды проекта Kainos
     a.item-project(href="#/works#netrika")
-      span 2015
+      //- span 2015
       h3 Netrika
+        small.label
       span Консультирование и обучение по HL7 FHIR и внедрение Fhirbase в рамках региональной шины
       i.fa.fa-chevrone-right
 
@@ -62,6 +68,7 @@
         span B
       span.productname
         h3 Основы HL7 FHIR
+          small.label
         p Реляционное хранилище для медицинских данных на основе HL7 FHIR
   .col-md-4  
     a.item-product
@@ -69,6 +76,7 @@
         span E
       span.productname
         h3 Анатомия Fhirbase
+          small.label
         p Реляционное хранилище для медицинских данных на основе HL7 FHIR
   .col-md-4  
     a.item-product
@@ -76,6 +84,7 @@
         span M
       span.productname
         h3 HL7 v2.x
+          small.label
         p Реляционное хранилище для медицинских данных на основе HL7 FHIR
 
 .container.offers
@@ -134,34 +143,34 @@
   br
   .row
     <script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@health_samurai">Health Samurai</a>
-  //- .row
-  //-   .col-md-6
-  //-     ul.list-unstyled
-  //-       li.item-article
-  //-         p.article-title 
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
-  //-       li.item-article
-  //-         p.article-title 
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
-  //-       li.item-article
-  //-         p.article-title 
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
-  //-   .col-md-6
-  //-     ul.list-unstyled
-  //-       li.item-article
-  //-         p.article-title 
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
-  //-       li.item-article
-  //-         p.article-title 
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
-  //-       li.item-article
-  //-         p.article-title
-  //-           strong Название статьи
-  //-         p Имя автора, 05.12.2015
+  .row
+    .col-md-6
+      ul.list-unstyled
+        li.item-article
+          p.article-title 
+            strong Название статьи
+          p Имя автора, 05.12.2015
+        li.item-article
+          p.article-title 
+            strong Название статьи
+          p Имя автора, 05.12.2015
+        li.item-article
+          p.article-title 
+            strong Название статьи
+          p Имя автора, 05.12.2015
+    .col-md-6
+      ul.list-unstyled
+        li.item-article
+          p.article-title 
+            strong Название статьи
+          p Имя автора, 05.12.2015
+        li.item-article
+          p.article-title 
+            strong Название статьи
+          p Имя автора, 05.12.2015
+        li.item-article
+          p.article-title
+            strong Название статьи
+          p Имя автора, 05.12.2015
 
 //- a(href="#foo/") Foo
