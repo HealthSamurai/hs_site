@@ -1,0 +1,28 @@
+.container
+  br
+  h2.text-center МИАЦ СПб "Справочник лабораторных тестов"
+  br
+  .row
+    .col-sm-4.col-sm-offset-4
+      ul.nav.nav-tabs.tabs-top
+        li(role="presentation")
+          a(href="#/") Вход
+        li.active(role="presentation")
+          a(href="#/registration") Регистрация
+      
+      br
+      form(ng-submit="registration()")
+        .form-group(ng-class="{'has-error': err.email}")
+          label.control-label(ng-if="err.email") Указанный Email уже используется
+          input.form-control(ng-model="new_user.email" type="email" required="true" placeholder="Email")
+        .form-group
+          input.form-control(ng-model="new_user.password" type="password" required="true" placeholder="Пароль")
+        .form-group
+          input.form-control(ng-model="new_user.data.phone" placeholder="Телефон" required)
+        .form-group
+          input.form-control(ng-model="new_user.data.name" placeholder="ФИО" required)
+        .form-group
+          input.form-control(ng-model="new_user.data.position" placeholder="Должность" required)
+        
+        .form-group
+          button#submit.btn.btn-block.btn-success(type="submit") Зарегистрироваться

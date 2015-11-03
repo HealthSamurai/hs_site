@@ -2,3 +2,4 @@ dist.tar.gz
 node_modules
 *sw?
 .aidbox.json
+.DS_Store

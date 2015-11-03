@@ -7,4 +7,4 @@ Aidbox Sample SPA application
 
 ```
 
-Open in the browser http://locatlhost:5000
+Open in the browser http://locatlhost:7000
