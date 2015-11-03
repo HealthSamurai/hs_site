@@ -14,7 +14,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: "\.js$",     loader: "file-loader" },
+      { test: "\.js$/", loader: "file-loader" },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
       { test: /\.coffee$/, loader: "coffee-loader" },
       { test: /\.less$/,   loader: etx.extract("style-loader","css-loader?minimize!postcss-loader!less-loader")},
       { test: /\.css$/,    loader: etx.extract("style-loader", "css-loader?minimize!") },
