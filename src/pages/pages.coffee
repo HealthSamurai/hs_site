@@ -9,6 +9,8 @@ require('ng-cache?!jade-env-html!./instructions.jade')
 require('ng-cache?!jade-env-html!./foo.jade')
 require('ng-cache?!jade-env-html!./products.jade')
 require('ng-cache?!jade-env-html!./works.jade')
+require('ng-cache?!jade-env-html!./services.jade')
+require('ng-cache?!jade-env-html!./education.jade')
 require('ng-cache?!jade-env-html!./contacts.jade')
 
 

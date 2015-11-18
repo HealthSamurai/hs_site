@@ -5,14 +5,15 @@
 .container
 	#kainos.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015 - ...
 			h2 Kainos &nbsp
 				small Support for Fhirbase
-			p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+			p Самураи расширили функциональные возможности Fhirbase под специфику проекта Kainos Evolve. Провели обучение команды Kainos по архитектурным особенностям Fhirbase и разработке на его основе.
 			br
 			.project-details(ng-class="{opened:kainos}")
 				strong О проекте Kainos
-				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				p Kainos разрабатывает платформу 
+					a(href="https://www.kainosevolve.com/solutions/" target="_blank") Kainos Evolve Platform 
+					|&nbspдля создания мобильных и web- приложений для здравоохранения в Великобритании. В основе платформы используется Fhirbase.
 				br
 				strong Продукты и технологии
 				br
@@ -21,6 +22,8 @@
 				span.label.custom-label plv8 
 				&nbsp
 				span.label.custom-label HL7 FHIR 
+				&nbsp
+				span.label.custom-label Fhirbase 
 				&nbsp
 				br
 				br
@@ -42,18 +45,21 @@
 	hr
 	#netrika.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015
 			h2 Нетрика.ДЛИ &nbsp
 				small Consulting & Audit
-			p Самураи проконсультировали Нетрику по межународным стандартам (HL7 v2, HL7 v3, HL7 FHIR) и помогли выбрать стандарт подходящий для их задач. Прочитали тренинг по основам HL7 FHIR. Поучаствовали в проектировании сервиса для обмена лабораторными данными и создании модели данных на основе HL7 FHIR.
+			p Самураи провели обучение команды Netrika по межународным стандартам: HL7 v2, HL7 v3, HL7 FHIR. Помогли в проектировании архитектуры регионального сервиса для обмена лабораторными данными и модели данных на основе HL7 FHIR.
 			br
 			.project-details(ng-class="{opened:netrika}")
 				strong О проекте Нетрика.ДЛИ
-				p Нетрика разаботала сервис для обмена данными лабораторных исследований и для реализации использовала Fhirbase. Сервис для обмена лабораторными данными, позволяет медицинским учреждениям и лабораториям обмениваться назначениями и результатами лабораторных исследований в электронном виде, весь обмен данными производится на основне стандарта HL7 FHIR.
+				p Нетрика разаботала и внедрила сервис 
+					a(href="http://api.netrika.ru/docs.php?article=DLIService" target="_blank") Нетрика.ДЛИ
+					|&nbspдля обмена данными лабораторных исследований в Санкт-Петербурге. Сервис позволяет медицинским учреждениям и лабораториям обмениваться назначениями и результатами лабораторных исследований в электронном виде. Обмен данными производится на основне стандарта HL7 FHIR. В основе сервиса используется Fhirbase.
 				br	 
 				strong Продукты и технологии
 				br
 				span.label.custom-label Fhirbase 
+				&nbsp
+				span.label.custom-label HL7 FHIR 
 				&nbsp
 				br
 				br
@@ -74,22 +80,19 @@
 	hr
 	#vitalsync.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015 - ...
 			h2 VitalSync &nbsp
 				small Consulting & Custom development
-			p Самураи консультируют по применению стандарта HL7 FHIR и занимаются разработкой интеграционного модуля для обработки входящего потока данных в формате HL7 v2.x.
+			p Самураи консультируют команду Medtronic по применению стандарта HL7 FHIR и занимаются разработкой интеграционного модуля для преобразования входящего потока данных в формате HL7 v2.x в HL7 FHIR.
 			br
 			.project-details(ng-class="{opened:vitalsync}")
-				strong О проекте Kainos
-				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				strong О проекте VitalSync
+				p Компания Medtronic разрабатывает информационную систему для мониторинга и сопровождения больных раком легких в США на базе существующей системы VitalSync. Для интеграции VitalSync с другими госпитальными системами используется HL7 Mapper.
 				br
 				strong Продукты и технологии
 				br
-				span.label.custom-label PostgreSQL 9.4+ 
-				&nbsp
-				span.label.custom-label plv8 
-				&nbsp
 				span.label.custom-label HL7 FHIR 
+				&nbsp
+				span.label.custom-label HL Mapper 
 				&nbsp
 				br
 				br
@@ -110,22 +113,28 @@
 	hr
 	#miazslt.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015
 			h2 МИАЦ.СЛТ &nbsp
 				small Project Bootstrap & Custom development
-			p Самураи спроектировали, разработали и запустили в использование web-сервис “МИАЦ.СЛТ” для управления справочником лабораторных тестов (like LOINC). Сервис спроектирован на основе стандарта HL7 FHIR и построен на базе технологичных продуктов Aidbox и Fhirbase.
+			p Самураи разработали, запустили и осуществляют поддержку web-сервиса для управления справочником лабораторных тестов Санкт-Петербурга. Сервис разработан на базе платформы Aidbox.
 			br
 			.project-details(ng-class="{opened:miazslt}")
-				strong О проекте Kainos
-				p Самураи провели обучение команды Kainos по архитектуре Fhirbase и работе с ним. Осуществляют поддержку/доработку Fhirbase в рамках проекта Kainos.
+				strong О проекте МИАЦ.СЛТ
+				p Web-сервис 
+					a(href="https://loinc.aidbox.io/#/" target="_blank") МИАЦ.СЛТ
+					|&nbspиспользуется для актуализации справочника лабораторных тестов, через заявки на изменения от представителей лабораторий и их последующим утверждением представителями СПб МИАЦ.
+				p Актуальный справочник распространяется через FHIR API и используется для идентификации лабораторных тестов при электронном обмене медицинскими данными между информационными системами медицинских учреждений Санкт-Петербурга.
 				br
 				strong Продукты и технологии
 				br
-				span.label.custom-label PostgreSQL 9.4+ 
+				span.label.custom-label Aidbox 
 				&nbsp
-				span.label.custom-label plv8 
+				span.label.custom-label Fhirbase 
 				&nbsp
 				span.label.custom-label HL7 FHIR 
+				&nbsp
+				span.label.custom-label AngularJS 
+				&nbsp
+				span.label.custom-label Clojure (JVM) 
 				&nbsp
 				br
 				br
@@ -146,21 +155,24 @@
 	hr
 	#miazmo.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015
 			h2 МИАЦ.МО &nbsp
 				small Project Bootstrap & Custom development
-			p Самураи спроектировали, разработали и запустили в использование web-сервис “МИАЦ.МО” для управления реестром медицинских организаций Санкт-Петербурга. Сервис спроектирован на основе стандарта HL7 FHIR и построен на базе технологичных продуктов Aidbox и Fhirbase.
+			p Самураи разработали, запустили и осуществляют поддержку web-сервиса для управления реестром медицинских организаций Санкт-Петербурга. Сервис разработан на базе платформы Aidbox.
 			br
 			.project-details(ng-class="{opened:miazmo}")
 				strong О проекте МИАЦ.МО
-				p Web-сервис МИАЦ.МО используется для актуализации реестра медицинских организаций, через заявки на изменения от представителей медицинских учреждений и их последующим утверждением представителями СПб МИАЦ.
-				p Актуальный реестр распространяется через FHIR API и используется для идентификации медицинских учреждений Санкт-Петербурга при электронном обмене медицинскими данными между информационными системами организаций..
+				p Web-сервис 
+					a(href="http://mo.nsi.zdrav.spb.ru/#/?q=" target="_blank") МИАЦ.МО
+					|&nbspиспользуется для актуализации реестра медицинских организаций, через заявки на изменения от представителей медицинских учреждений и их последующим утверждением представителями СПб МИАЦ.
+				p Актуальный реестр распространяется через FHIR API и используется для идентификации медицинских учреждений Санкт-Петербурга при электронном обмене медицинскими данными между информационными системами медицинских учреждений.
 				br
 				strong Продукты и технологии
 				br
-				span.label.custom-label Fhirbase 
-				&nbsp
 				span.label.custom-label Aidbox 
+				&nbsp
+				span.label.custom-label Fhirbase
+				&nbsp
+				span.label.custom-label HL7 FHIR 
 				&nbsp
 				span.label.custom-label AngularJS 
 				&nbsp
@@ -185,12 +197,25 @@
 	hr
 	#holiadvice.row.list-item
 		.col-md-8.project-descrption
-			span.date 2015
 			h2 Holiadvice &nbsp
 				small Custom development
-			p Самураи спроектировали и разработали телемедицинский портал для "нетрадиционной" медицины. На данный момент используется в Израиле и планируется выход на международный рынок.
+			p Самураи разработали телемедицинский портал для "нетрадиционной" медицины. Владельцы сервиса произвели пилотное внедрение в Израиле и планирует выход на международный рынок.
 			br
-			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
+			.project-details(ng-class="{opened:holiadvice}")
+				strong О проекте Holiadvice
+				p Телемедицинский портал 
+					a(href="https://www.holiadvice.com/" target="_blank") Holiadvice
+					|&nbsp предназначен для проведения он-лайн консультации со специалистами "нетрадиционной" медицины. На данный момент проект принят в программу &nbsp
+					a(href="https://www.startuphealth.com/c/27733/Holiadvice") StartUp Health.
+				br
+				strong Продукты и технологии
+				br
+				span.label.custom-label Ruby on Rails 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="holiadvice=!holiadvice") Подробнее
 		.col-md-3
 			.images
 				.row
@@ -206,12 +231,24 @@
 	hr
 	#salemed.row.list-item
 		.col-md-8.project-descrption
-			span.date 2014 - 2015
 			h2 SaleMed &nbsp
 				small Custom development
-			p Самураи придумали, разработали и провели пилотный запуск электронной торговой площадки для МРТ-центров и страховых компаний в Санкт-Петербурге.
+			p Самураи разработали и провели пилотный запуск электронной торговой площадки для МРТ-центров и страховых компаний в Санкт-Петербурге.
 			br
-			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
+			.project-details(ng-class="{opened:salemed}")
+				strong О проекте Salemed
+				p Электронная торговая площадка 
+					a(href="https://salemed.info/" target="_blank") Salemed
+					|&nbsp предназначена для реализации услуг со скидками между МРТ-центрами и страховыми компаниями.
+				br
+				strong Продукты и технологии
+				br
+				span.label.custom-label Clojure (JVM) 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="salemed=!salemed") Подробнее
 		.col-md-3
 			.images
 				.row
@@ -227,12 +264,30 @@
 	hr
 	#medclient.row.list-item
 		.col-md-8.project-descrption
-			span.date 2007 - 2014
 			h2 MedClient EHR &nbsp
 				small Custom development
-			p Самураи разработали, сертифицировали по программе ONC (Stage 1) и внедрили, в трех клиниках США, медицинскую информационную систему для госпиталей (EHR).
+			p Самураи разработали, сертифицировали и внедрили в трех клиниках США, медицинскую информационную систему для госпиталей (EHR).
 			br
-			a.btn.btn-default.gotosite(href="#/works#kainos") Подробнее
+			.project-details(ng-class="{opened:medclient}")
+				strong О проекте MedClient
+				p Облачная медицинская информационная система 
+					a(href="http://choice-hs.com/" target="_blank") MedClient EHR
+					|&nbsp предназначена для информационного сопроваждения клинических и административных процессов скорой помощи и стационаров в США. Реализует врачебный и медсестринский документооборот, систему помощи в принятии клинических решений, аналитические инструменты для врачей и т.д.
+				p Система сертифицирована по программе 
+					a(href="https://www.healthit.gov/providers-professionals/meaningful-use-definition-objectives" target="_blank") ONC Stage 1 и подготовлена к Stage 2.
+				br
+				strong Продукты и технологии
+				br
+				span.label.custom-label Ruby on Rails 
+				&nbsp
+				span.label.custom-label PostgreSQL 
+				&nbsp
+				span.label.custom-label Amazon AWS 
+				&nbsp
+				br
+				br
+				br
+			a.btn.btn-default.gotosite(href="javascript:void(0)" ng-click="medclient=!medclient") Подробнее
 		.col-md-3
 			.images
 				.row

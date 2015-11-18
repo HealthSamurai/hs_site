@@ -19,9 +19,17 @@ app.config ($routeProvider) ->
     name: 'index'
     templateUrl: 'works.jade'
     controller: 'IndexCtrl'
+  rp.when '/services',
+    name: 'index'
+    templateUrl: 'services.jade'
+    controller: 'IndexCtrl'
   rp.when '/contacts',
     name: 'index'
     templateUrl: 'contacts.jade'
+    controller: 'IndexCtrl'
+  rp.when '/education',
+    name: 'index'
+    templateUrl: 'education.jade'
     controller: 'IndexCtrl'
   rp.when '/foo',
     name: 'index'
