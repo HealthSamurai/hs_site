@@ -1,9 +1,13 @@
-.container-fluid.title
-  .container.text-center
+.container-fluid.title.text-center
+  .layer
+  .container
     span.moto Мы 
       span.title_piece знаем как 
       | создавать медицинские информационные системы будущего
     span.desc Эксперты в Health IT. Разрабатываем для клиентов на основе наших технологичных продуктов и стандарта HL7 FHIR.
+    //- a.btn.btn-default.hairus(href="http://fhirbase.github.io" target="_blank") Нанять нас
+    //- .logo-place.text-center
+    //-   i.hs-icon.icon-samurai.logo-bottom
 
 .container.products
   h3 Продукты &nbsp
@@ -14,44 +18,58 @@
     a.item-product(href="#/products#fhirbase")
       span.image-product
         i.hs-icon.logo.icon-fhirbase
+        h1.text-left.product_labal Fhirbase &nbsp
       span.productname
-        h3 Fhirbase &nbsp
-          small.label Open Source
+        //- h3 Fhirbase &nbsp
+          //- small.label Open Source
         p Реляционное хранилище для медицинских данных на основе HL7 FHIR
   .col-md-4
     a.item-product(href="#/products#aidbox")
       span.image-product
         i.hs-icon.logo.icon-aidbox
+        h1.text-left.product_labal Aidbox &nbsp
       span.productname
-        h3 Aidbox &nbsp
-          small.label Platform as a Service
+        //- h3 Aidbox &nbsp
+          //- small.label Platform as a Service
         p Облачная платформа для разработки медицинских приложений на основе HL7 FHIR
   .col-md-4
     a.item-product(href="#/products#hl7mapper")
       span.image-product
         i.hs-icon.logo.icon-mapper
+        h1.text-left.product_labal HL7 Mapper &nbsp
       span.productname
-        h3 HL7 Mapper &nbsp
-          small.label Library
+        //- h3 HL7 Mapper &nbsp
+          //- small.label Library
         p Интеграционный модуль для преобразования сообщений HL7 v2.x в HL7 FHIR и обратно
 .container.projects
   h3 Проекты &nbsp
     small
       a.lbl(href="#/works") Все проекты (9)
   br
+  //- .col-md-6.project-box
+  //-   p
+  //- .col-md-6.project-box
+  //-   p
+  //- .col-md-6.project-box
+  //-   p 
+  //- .col-md-6.project-box
+  //-   p 
   .cont-projects
     a.item-project(href="#/works#medclient")
       //- span 2007-2014
+      //- i.hs-icon.logo.icon-choice
       h3 MedClient EHR
         small.label
       span Разработка, сертификация и внедрение в 3-х американских клиниках облачной EHR
     a.item-project(href="#/works#kainos")
       //- span 2015 год
+      //- i.hs-icon.logo.icon-choice
       h3 Kainos
         small.label
       span Доработка Fhirbase под нужды проекта Kainos
     a.item-project(href="#/works#netrika")
       //- span 2015
+      //- i.hs-icon.logo.icon-choice
       h3 Netrika
         small.label
       span Консультирование и обучение по HL7 FHIR и внедрение Fhirbase в рамках региональной шины
@@ -65,7 +83,7 @@
   .col-md-4
     a.item-product(href="#/education")
       span.image-product
-        span B
+        //- span B
       span.productname
         h3 Основы HL7 FHIR
           small.label
@@ -73,7 +91,7 @@
   .col-md-4  
     a.item-product(href="#/education")
       span.image-product
-        span E
+        //- span E
       span.productname
         h3 Анатомия Fhirbase
           small.label
@@ -81,7 +99,7 @@
   .col-md-4  
     a.item-product(href="#/education")
       span.image-product
-        span M
+        //- span M
       span.productname
         h3 Тренинг по DevOps
           small.label

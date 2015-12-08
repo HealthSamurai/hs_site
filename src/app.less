@@ -85,19 +85,36 @@ body{
 	padding-bottom: 20px;
 	position: fixed;
 	width: 100%;
-	background-color: white;
-	// opacity: 0.78;
-	// border-bottom: 1px solid #ddd;
+	// background-color: #fafafa;
+	background-color: transparent;
+	opacity: 0.8;
 	z-index: 3;
 	span.nav_title{
-		display: inline-block;
-		padding-top: 10px;
-		font-weight: 600;
-		a{
-			color: #333356;
+		position: fixed;
+		top: 0;
+		width: 80px;
+		height: 68px;
+		background-color: #A23835;
+		text-align: center;
+		i{
+			padding-top: 15px;
+			text-align: center;
+			color: white;
 			text-decoration: none;
+			font-size: 32px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
+	// span.nav_title{
+	// 	display: inline-block;
+	// 	padding-top: 10px;
+	// 	font-weight: 600;
+	// 	a{
+	// 		color: #333356;
+	// 		text-decoration: none;
+	// 	}
+	// }
 	ul{
 		display: inline-block;
 		margin-bottom: 0px;
@@ -113,6 +130,7 @@ body{
 			background-color: transparent;
 		}
 		a:hover{
+			color: #A23835;
 			text-decoration: none;
 			border: 1px solid #A23835;
 		}
@@ -133,15 +151,31 @@ body{
 // Landing Styles
 
 .title{
-	padding: 240px 15px;
-	// background-color: #fafafa;
-	// background-image: url('/src/img/background.png');
-	background-position: center;
+	padding-top: 220px;
+	padding-bottom: 220px;
 	border-bottom: 1px solid #ddd;
-	// background-color: #A23835;
-	// background: -webkit-linear-gradient(top, #A23835, white);
+	// background-color: #ddd;
+	// background-image:
+ //    radial-gradient(
+ //      white,
+ //      #fafafa
+ //    );
+	position: relative;
+	.layer{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		// background-image: url('/src/img/bg4.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.2;
+		z-index: -1;	
+	}
 	span.moto{
 		font-size: 41px;
+		font-weight: 600;
 		display: block;
 		line-height: 1.3em;
 		max-width: 800px;
@@ -150,6 +184,7 @@ body{
 	}
 	span.desc{
 		font-size: 21px;
+		font-weight: 600;
 		display: block;
 		padding-top: 24px;
 		opacity: 0.88;
@@ -162,7 +197,36 @@ body{
 		color: #A23835;
 		font-weight: 600;
 	}
+	.logo-place{
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background-color: #A23835;
+		top: 0px;
+
+		i.logo-bottom{
+			color: white;
+			padding-top: 20px;
+			font-size: 32px;
+		}
+	}
+	a.hairus{
+		font-size: 18px;
+	}
 }
+
+// .logo-place{
+// 	position: relative;
+// 	width: 80px;
+// 	height: 100px;
+// 	background-color: #A23835;
+// 	top: -100px;
+// 	i.logo-bottom{
+// 		color: white;
+// 		padding-top: 20px;
+// 		font-size: 39px;
+// 	}
+// }
 
 .sub-title{
 	padding-top: 160px;
@@ -239,19 +303,39 @@ body{
 		color: #333356;
 		display: block;
 		span.image-product{
+			position: relative;
+			overflow: hidden;
 			font-size: 144px;
 			text-align: center;
 			width: 100%;
 			height: 200px;
-			background-color: #fafafa;
+			border: 1px solid #ddd;
+			// background-color: #fafafa;
 			color: #888;
 			display: inline-block;
-			// background-image: url(http://assets.materialup.com/uploads/54fb9581-1be5-4839-81b8-1a815a96865d/avocadomaterial.jpg);
-			// background-size: 400px;
-			// background-position: center;
+			// background-image: url(http://studiompls.com/assets/nourish_thumb_color.jpg);
+			background-size: 400px;
+			background-position: center;
+			h1.product_labal{
+				position: absolute;
+				font-size: 38px;
+				bottom: 0px;
+				left: 10px;
+				// color: #333356;
+				color: #A23835;;
+			}
+			i{
+				position: absolute;
+				top: 10px;
+				right: -70px;
+				font-size: 160px;
+				color: #ddd;
+			}
 		}
 		span.productname{
+			padding-top: 10px;
 			padding-left: 10px;
+			// padding-right: 20px;
 			display: inline-block;
 		}
 	}
@@ -261,8 +345,14 @@ a.item-product:hover{
 	cursor: pointer;
 	span.image-product{
 		border: 1px solid #A23835;
-		background-color: #A23835;
-		color: white;
+		// background-color: #A23835;
+		color: #A23835;
+		h1.product_labal{
+			color: #A23835;
+		}
+		i{
+			color: #A23835;
+		}
 	}
 	span.productname{
 		h3{
@@ -273,6 +363,8 @@ a.item-product:hover{
 
 .cont-projects{
 	a.item-project{
+		position: relative;
+		overflow: hidden;
 		display: inline-block;
 		text-decoration: none;
 		color: #333356;
@@ -280,26 +372,34 @@ a.item-product:hover{
 		margin-right: 10px;
 		// border: 1px solid #ddd;
 		margin-bottom: 10px;
-		padding-left: 54px;
-		padding-bottom: 54px;
-		padding-top: 54px;
-		background-color: #fafafa;
+		padding-left: 40px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+		border-left: 4px solid #ddd;
+		// background-color: #fafafa;
 	}
 	h3{
 		margin-top: 4px;
-		margin-bottom: 16px;
+		margin-bottom: 10px;
 	}
-	i.fa{
-	  color: #eee;
-    font-size: 2em;
-    position: absolute;
-    right: 5px;
-    top: 15px;
+	i{
+		position: absolute;
+		top: 20px;
+		left: -100px;
+		font-size: 144px;	
+		color: #ddd;	
   }
 }
 
+.project-box{
+	border: 1px solid white;
+	background-color: #fafafa;
+	height: 300px;
+}
+
 a.item-project:hover{
-	border: 1px solid #A23835;
+	border-left: 4px solid #A23835;
+	background-color: #fafafa;
 	cursor: pointer;
 	h3 {
 		color: #A23835 !important;
@@ -341,11 +441,14 @@ a.item-project:hover{
 
 .calltoaction{
 	padding: 100px 0px;
+	color: white;
 	// border-bottom: 1px solid #ddd;
 	// border-top: 1px solid #ddd;
-	background-color: #f9de76;
+	background-color: #A23835; 
+	// #f9de76;
 	p{
 		width: 400pt;
+		color: white;
 		margin-right: auto;
 		margin-left: auto;
 	}
